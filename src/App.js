@@ -48,12 +48,12 @@ const sendSMS = (number, otp = "Zala") => {
   });
 }
 
-// TODO: remove logs and rushi mails and remove commented actual emails
 const App = () => {
   const [step, setStep] = useState(1);
   const [date, setDate] = useState(new Date("2020-01-01"));
   const [otp, setOtp] = useState("");
   const [otpSent, setOtpSent] = useState("");
+  // TODO: remove below log
   console.log("otpSent haag => ", otpSent);
 
   return (
@@ -82,7 +82,7 @@ const App = () => {
                     const createOtp = Math.round(Math.random() * 10000000);
                     setOtpSent(createOtp);
                     setStep(2);
-                    sendMail("rushicbharad@gmail.com", "Rushi", createOtp);
+                    // TODO: Remove below 3 comments
                     // sendMail("nikumbhrita@gmail.com", "Rita", createOtp);
                     // sendMail("chetanvc991@gmail.com", "Chetan", createOtp);
                     // sendSMS("+919405938483", createOtp);
@@ -110,13 +110,15 @@ const App = () => {
               <input
                 value={otp.split("").join("-")}
                 onChange={(e) => setOtp(e.target.value.replace(/-/g, ""))}
+                placeholder="0-0-0-0-0-0-0"
               />
               <span
                 className="App-link"
                 onClick={() => {
                   if (+otp === +otpSent) {
                     setStep(3);
-                    sendMail("rushicbharad@gmail.com", "Rushi");
+                    // TODO: remove below comment
+                    // sendMail("rushicbharad@gmail.com", "Rushi");
                   }
                 }}
               >
