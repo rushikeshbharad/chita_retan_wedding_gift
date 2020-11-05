@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chita_retan_wedding_gift/static/css/main.069f2b00.chunk.css",
+    "main.css": "/chita_retan_wedding_gift/static/css/main.a7bf5ad2.chunk.css",
     "main.js": "/chita_retan_wedding_gift/static/js/main.2ef3fb22.chunk.js",
     "main.js.map": "/chita_retan_wedding_gift/static/js/main.2ef3fb22.chunk.js.map",
     "runtime-main.js": "/chita_retan_wedding_gift/static/js/runtime-main.8787bfdf.js",
@@ -12,14 +12,14 @@
     "static/js/3.b8332991.chunk.js.map": "/chita_retan_wedding_gift/static/js/3.b8332991.chunk.js.map",
     "index.html": "/chita_retan_wedding_gift/index.html",
     "static/css/2.95456d05.chunk.css.map": "/chita_retan_wedding_gift/static/css/2.95456d05.chunk.css.map",
-    "static/css/main.069f2b00.chunk.css.map": "/chita_retan_wedding_gift/static/css/main.069f2b00.chunk.css.map",
+    "static/css/main.a7bf5ad2.chunk.css.map": "/chita_retan_wedding_gift/static/css/main.a7bf5ad2.chunk.css.map",
     "static/js/2.e0f131df.chunk.js.LICENSE.txt": "/chita_retan_wedding_gift/static/js/2.e0f131df.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8787bfdf.js",
     "static/css/2.95456d05.chunk.css",
     "static/js/2.e0f131df.chunk.js",
-    "static/css/main.069f2b00.chunk.css",
+    "static/css/main.a7bf5ad2.chunk.css",
     "static/js/main.2ef3fb22.chunk.js"
   ]
 }
