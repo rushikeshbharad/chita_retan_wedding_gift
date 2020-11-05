@@ -18,6 +18,21 @@ p strong {
   animation: colorCycle 8s infinite ease-in-out;
 }
 
+.App-header.done {
+  animation: colorCycleDone 8s infinite ease-in-out;
+  position: relative;
+}
+
+.App-header.done::after {
+  content: "";
+  background-image: url("./bolt-solid.svg");
+  position: absolute;
+  height: 90vh;
+  width: calc(90vh / 1.6);
+  opacity: 0;
+  animation: colorCycleDoneFlash 8s infinite ease-in-out;
+}
+
 .subtitle {
   margin-top: 0;
   margin-bottom: 48px;
@@ -63,5 +78,95 @@ input {
   100% {
     background-color: #282C34;
     color: #ffdddd;
+  }
+}
+
+@keyframes colorCycleDone {
+  0% {
+    background-color: #282C34;
+    color: #ffeeee;
+  }
+  46% {
+    background-color: #322D31;
+    color: #eeffff;
+  }
+  47% {
+    background-color: #F5FAFF;
+    color: #322D31;
+  }
+  48% {
+    background-color: #322D31;
+    color: #eeffff;
+  }
+  49% {
+    background-color: #F5FAFF;
+    color: #322D31;
+  }
+  50% {
+    background-color: #322D31;
+    color: #eeffff;
+  }
+  51% {
+    background-color: #F5FAFF;
+    color: #322D31;
+  }
+  52% {
+    background-color: #322D31;
+    color: #eeffff;
+  }
+  53% {
+    background-color: #F5FAFF;
+    color: #322D31;
+  }
+  54% {
+    background-color: #322D31;
+    color: #eeffff;
+  }
+  100% {
+    background-color: #282C34;
+    color: #ffdddd;
+  }
+}
+
+@keyframes colorCycleDoneFlash {
+  0% {
+    opacity: 0;
+  }
+  46% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 0.3;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 0.3;
+  }
+  52% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 0.3;
+  }
+  54% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .App-header.done::after {
+    height: 60vh;
+    width: calc(60vh / 1.6);
   }
 }

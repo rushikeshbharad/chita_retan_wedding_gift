@@ -64,7 +64,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className={`App-header ${step === 3 ? "done" : ""}`}>
         {{
           1: (
             <>
