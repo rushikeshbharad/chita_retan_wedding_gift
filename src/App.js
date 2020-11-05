@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import './App.css';
@@ -55,6 +55,12 @@ const App = () => {
   const [otpSent, setOtpSent] = useState("");
   // TODO: remove below log
   console.log("otpSent haag => ", otpSent);
+
+  useEffect(() => {
+    if (localStorage.getItem("success")) {
+      setStep(3);
+    }
+  }, []);
 
   return (
     <div className="App">
@@ -119,6 +125,7 @@ const App = () => {
                     setStep(3);
                     // TODO: remove below comment
                     // sendMail("rushicbharad@gmail.com", "Rushi");
+                    localStorage.setItem("success", "true");
                   }
                 }}
               >
