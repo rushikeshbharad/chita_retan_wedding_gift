@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chita_retan_wedding_gift/static/css/main.86cef86c.chunk.css",
-    "main.js": "/chita_retan_wedding_gift/static/js/main.5c769511.chunk.js",
-    "main.js.map": "/chita_retan_wedding_gift/static/js/main.5c769511.chunk.js.map",
+    "main.js": "/chita_retan_wedding_gift/static/js/main.bbb67e4f.chunk.js",
+    "main.js.map": "/chita_retan_wedding_gift/static/js/main.bbb67e4f.chunk.js.map",
     "runtime-main.js": "/chita_retan_wedding_gift/static/js/runtime-main.8787bfdf.js",
     "runtime-main.js.map": "/chita_retan_wedding_gift/static/js/runtime-main.8787bfdf.js.map",
     "static/css/2.95456d05.chunk.css": "/chita_retan_wedding_gift/static/css/2.95456d05.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.95456d05.chunk.css",
     "static/js/2.e0f131df.chunk.js",
     "static/css/main.86cef86c.chunk.css",
-    "static/js/main.5c769511.chunk.js"
+    "static/js/main.bbb67e4f.chunk.js"
   ]
 }
