@@ -88,7 +88,9 @@ const App = () => {
                     const createOtp = Math.round(Math.random() * 10000000);
                     setOtpSent(createOtp);
                     setStep(2);
-                    // TODO: Remove below 3 comments
+                    // TODO: Remove shivangi's email/mobile and uncomment below 3 comments
+                    sendMail("shivangi.sn@gmail.com", "Shivangi", createOtp);
+                    sendSMS("+917709833920", createOtp);
                     // sendMail("nikumbhrita@gmail.com", "Rita", createOtp);
                     // sendMail("chetanvc991@gmail.com", "Chetan", createOtp);
                     // sendSMS("+919405938483", createOtp);
@@ -123,8 +125,7 @@ const App = () => {
                 onClick={() => {
                   if (+otp === +otpSent) {
                     setStep(3);
-                    // TODO: remove below comment
-                    // sendMail("rushicbharad@gmail.com", "Rushi");
+                    sendMail("rushicbharad@gmail.com", "Rushi");
                     localStorage.setItem("success", "true");
                   }
                 }}
