@@ -53,8 +53,6 @@ const App = () => {
   const [date, setDate] = useState(new Date("2020-01-01"));
   const [otp, setOtp] = useState("");
   const [otpSent, setOtpSent] = useState("");
-  // TODO: remove below log
-  console.log("otpSent haag => ", otpSent);
 
   useEffect(() => {
     if (localStorage.getItem("success")) {
@@ -88,12 +86,9 @@ const App = () => {
                     const createOtp = Math.round(Math.random() * 10000000);
                     setOtpSent(createOtp);
                     setStep(2);
-                    // TODO: Remove shivangi's email/mobile and uncomment below 3 comments
-                    sendMail("shivangi.sn@gmail.com", "Shivangi", createOtp);
-                    sendSMS("+917709833920", createOtp);
-                    // sendMail("nikumbhrita@gmail.com", "Rita", createOtp);
-                    // sendMail("chetanvc991@gmail.com", "Chetan", createOtp);
-                    // sendSMS("+919405938483", createOtp);
+                    sendMail("nikumbhrita@gmail.com", "Rita", createOtp);
+                    sendMail("chetanvc991@gmail.com", "Chetan", createOtp);
+                    sendSMS("+919405938483", createOtp);
                   }
                 }}
               >
